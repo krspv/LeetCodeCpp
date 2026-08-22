@@ -41,23 +41,18 @@ public:
     if (1 == size(coins))
       return static_cast<long long>(k) * coins[0];
 
+    // Binary search for the ordinal
     long long L = 1, R = static_cast<long long>(coins.back()) * k;
     long long ordinal, mid = -1, prev_mid;
     do {
       prev_mid = mid;
       mid = L + ((R - L) >> 1);
       ordinal = findOrdinal(coins, mid, 0, 1, 0);
-      if (ordinal > k)
-        R = mid;
-      else
-        L = mid;
+      (ordinal > k ? R : L) = mid;
     } while (k != ordinal && mid != prev_mid);
 
-    long long min_remainder = 99;
-    for (int coin : coins) {
-      if (mid % coin < min_remainder)
-        min_remainder = mid % coin;
-    }
+    // Adnjust the ordinal
+    long long min_remainder = accumulate(begin(coins), end(coins), 99LL, [mid](long long acc, long long coin) { return min(acc, mid % coin); });
     mid -= min_remainder;
 
     return mid;
@@ -105,6 +100,5 @@ int main() {
   cout << Solution().findKthSmallestBrute(*make_unique<vector<int>>(vector{ 5, 2 }), 3) << endl;
   cout << Solution().findKthSmallest(*make_unique<vector<int>>(vector{ 17, 22, 25, 24 }), 3000) << endl;
   cout << Solution().findKthSmallestBrute(*make_unique<vector<int>>(vector{ 17, 22, 25, 24 }), 3000) << endl;
-  cout << Solution().findOrdinal(*make_unique<vector<int>>(vector{ 5, 2 }), 7, 0, 1, 0) << endl;
 }
 #endif
