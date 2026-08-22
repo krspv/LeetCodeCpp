@@ -108,7 +108,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;TASK_9;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;TASK_3116;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
@@ -143,12 +143,16 @@
     <ClCompile Include="1563.cpp" />
     <ClCompile Include="2029.cpp" />
     <ClCompile Include="3069.cpp" />
+    <ClCompile Include="3116.cpp" />
     <ClCompile Include="3471.cpp" />
     <ClCompile Include="3643.cpp" />
     <ClCompile Include="6.cpp" />
     <ClCompile Include="7.cpp" />
     <ClCompile Include="8.cpp" />
     <ClCompile Include="9.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="KCustomWatch.natvis" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
