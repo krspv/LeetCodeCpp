@@ -12,6 +12,7 @@ public:
     long long total = 0;
     for (size_t i = idx; i < coins.size(); ++i) {
       long long L = lcm(curLcm, coins[i]);
+      if (L > value) continue;  // Skip dead branches
       int newDepth = depth + 1;
       long long term = value / L;
 
@@ -46,7 +47,7 @@ public:
     long long ordinal, mid = -1, prev_mid;
     do {
       prev_mid = mid;
-      mid = L + ((R - L) >> 1);
+      mid = midpoint(L, R);
       ordinal = findOrdinal(coins, mid, 0, 1, 0);
       (ordinal > k ? R : L) = mid;
     } while (k != ordinal && mid != prev_mid);

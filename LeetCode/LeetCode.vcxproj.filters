@@ -51,6 +51,9 @@
     <ClCompile Include="3622.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="1927.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="KCustomWatch.natvis" />
