@@ -29,7 +29,7 @@ private:
 };
 
 
-void printVec(const vector<int>& vec) {
+static void printVec(const vector<int>& vec) {
   for (int num : vec) {
     cout << num << ' ';
   }

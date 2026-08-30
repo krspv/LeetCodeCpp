@@ -18,7 +18,7 @@ public:
 };
 
 
-void printVec(vector<vector<int>> grid) {
+static void printVec(vector<vector<int>> grid) {
   for (auto vec : grid) {
     for (int i : vec)
       cout << setw(2) << i << ' ';
