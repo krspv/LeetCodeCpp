@@ -108,7 +108,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;TASK_10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;TASK_11;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="10.cpp" />
+    <ClCompile Include="11.cpp" />
     <ClCompile Include="1386.cpp" />
     <ClCompile Include="1563.cpp" />
     <ClCompile Include="1927.cpp" />
@@ -153,6 +154,7 @@
     <ClCompile Include="3471.cpp" />
     <ClCompile Include="3622.cpp" />
     <ClCompile Include="3643.cpp" />
+    <ClCompile Include="3655.cpp" />
     <ClCompile Include="3720.cpp" />
     <ClCompile Include="3734.cpp" />
     <ClCompile Include="3876.cpp" />
@@ -162,9 +164,16 @@
     <ClCompile Include="8.cpp" />
     <ClCompile Include="874.cpp" />
     <ClCompile Include="9.cpp" />
+    <ClCompile Include="940.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="KCustomWatch.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input_3655_a.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="input_3655_b.json" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
