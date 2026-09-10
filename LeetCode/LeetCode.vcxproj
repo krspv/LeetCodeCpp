@@ -108,7 +108,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;TASK_12;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;TASK_14;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
@@ -142,12 +142,15 @@
     <ClCompile Include="10.cpp" />
     <ClCompile Include="11.cpp" />
     <ClCompile Include="12.cpp" />
+    <ClCompile Include="13.cpp" />
     <ClCompile Include="1386.cpp" />
+    <ClCompile Include="14.cpp" />
     <ClCompile Include="1563.cpp" />
     <ClCompile Include="1927.cpp" />
     <ClCompile Include="2029.cpp" />
     <ClCompile Include="2058.cpp" />
     <ClCompile Include="2091.cpp" />
+    <ClCompile Include="2265.cpp" />
     <ClCompile Include="2904.cpp" />
     <ClCompile Include="2948.cpp" />
     <ClCompile Include="3069.cpp" />
