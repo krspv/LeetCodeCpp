@@ -1,4 +1,4 @@
-#ifdef TASK_14  
+#ifdef TASK_14
 #include <algorithm>
 #include <iostream>
 #include <memory>
