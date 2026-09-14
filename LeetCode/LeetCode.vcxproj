@@ -108,7 +108,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;TASK_3483;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;TASK_836;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
@@ -155,6 +155,7 @@
     <ClCompile Include="2948.cpp" />
     <ClCompile Include="3069.cpp" />
     <ClCompile Include="3116.cpp" />
+    <ClCompile Include="3414.cpp" />
     <ClCompile Include="3471.cpp" />
     <ClCompile Include="3483.cpp" />
     <ClCompile Include="3622.cpp" />
@@ -168,6 +169,8 @@
     <ClCompile Include="6.cpp" />
     <ClCompile Include="7.cpp" />
     <ClCompile Include="8.cpp" />
+    <ClCompile Include="835.cpp" />
+    <ClCompile Include="836.cpp" />
     <ClCompile Include="874.cpp" />
     <ClCompile Include="9.cpp" />
     <ClCompile Include="940.cpp" />
@@ -179,7 +182,9 @@
     <Text Include="input_3655_a.json" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="input_3414.json" />
     <None Include="input_3655_b.json" />
+    <None Include="input_835.json" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

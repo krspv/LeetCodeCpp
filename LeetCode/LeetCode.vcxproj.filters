@@ -111,6 +111,15 @@
     <ClCompile Include="3483.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="3414.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="835.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="836.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="KCustomWatch.natvis" />
@@ -122,6 +131,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="input_3655_b.json">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="input_3414.json">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="input_835.json">
       <Filter>Source Files</Filter>
     </None>
   </ItemGroup>
