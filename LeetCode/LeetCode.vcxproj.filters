@@ -129,6 +129,9 @@
     <ClCompile Include="1477.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="1520.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="KCustomWatch.natvis" />
