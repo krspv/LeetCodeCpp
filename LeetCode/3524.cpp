@@ -38,27 +38,33 @@ public:
   }
 
   vector<long long> resultArray(vector<int>& nums, int k) {
+    int L = static_cast<int>(size(nums));
+    if (k == 1)
+      return { (static_cast<long long>(L) * (L + 1)) >> 1 };
+
     vector<long long> ret(k);
 
-    int L = static_cast<int>(size(nums));
-    vector<int> dp(L * k, 0); // Element (i,j) is dp[i*k + j]
+    vector<int> dp(2 * k, 0); // Element (i,j) is dp[i*k + j]
     for (int i = 0; i < L; ++i) {
       int div = nums[i] % k;
       if (div > 0) {
-        ++dp[i * k + div];
+        ++dp[k + div];
         if (i > 0) {
           for (int r = 0; r < k; ++r) {
-            if (dp[(i - 1) * k + r] > 0) {
+            if (dp[r] > 0) {
               int prod = (r * div) % k;
-              dp[i * k + prod] += dp[(i - 1) * k + r];
+              dp[k + prod] += dp[r];
             }
           }
         }
       }
-      else dp[i * k] = i + 1;
+      else dp[k] = i + 1;
 
-      for (int r = 0; r < k; ++r)
-        ret[r] += dp[i * k + r];
+      for (int r = 0; r < k; ++r) {
+        ret[r] += dp[k + r];
+        dp[r] = dp[k + r];
+        dp[k + r] = 0;
+      }
     }
 
     return ret;
@@ -88,5 +94,6 @@ int main() {
   nums = { 2, 2, 2, 2, 2 }, k = 4;        UKU;
   nums = { 1, 2, 8, 6, 7, 3 }, k = 5;     UKU;
   nums = { 3, 2, 2, 2 }, k = 4;           UKU;
+  nums = { 3, 2, 2, 2, 5, 7 }, k = 1;     UKU;
 }
 #endif
