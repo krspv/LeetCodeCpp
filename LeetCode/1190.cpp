@@ -12,6 +12,7 @@ public:
   string reverseParentheses(const string& s) {
     stack<size_t> stx;
     string ret;
+    ret.reserve(size(s));
 
     for (char ch : s) {
       switch (ch) {
